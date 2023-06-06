@@ -1,0 +1,13 @@
+<%- include('../header') %>
+
+    <body class="bg-stone-800 text-white p-20 " >
+        <div class="container">
+            <h1 class="text-6xl mb-16">Create Article</h1>
+        
+            <form action="/articles" method="post">
+                <%- include('_form_fields',article)%>
+            </form>
+        </div>
+ 
+
+<%- include('../footer') %>

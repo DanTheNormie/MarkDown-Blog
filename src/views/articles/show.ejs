@@ -1,0 +1,14 @@
+<%- include('../header') %>
+    <body class="bg-stone-800 text-white p-20 ">
+        <div class="container">
+            <h1 class="text-6xl mb-2"><%=article.title%></h1>
+            <div class="text-gray-500 text-2xl mb-2 "><%=article.createdAt.toLocaleDateString()%></div>
+            <button class="h-12 px-6 rounded-lg mr-2 bg-gray-500"><a href="/" class="w-full h-full">All Articles</a></button>
+            <button class="h-12 px-6 rounded-lg mx-2 bg-blue-500"><a href="/articles/edit/<%=article.id%>" class="w-full h-full">Edit</a></button>
+        
+            <div class="my-4 container">
+                <%-article.sanitizedHtml%>
+            </div>
+        </div>
+    
+<%- include('../footer') %>
