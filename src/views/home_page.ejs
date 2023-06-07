@@ -21,7 +21,7 @@
         <div>
           <div class="mb-2 flex justify-between">
             <p
-              class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold line-clamp-2 py-2">
+              class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold line-clamp-2 break-keep py-2">
               <%=article.title%>
             </p>
             <form
@@ -44,7 +44,7 @@
             </form>
           </div>
         </div>
-        <div class="mb-2 line-clamp-2"><%=article.description%></div>
+        <p class="mb-2 break-keep overflow-ellipsis line-clamp-2"><%=article.description%></p>
         <div
           class="flex md:flex-row flex-col items-center md:items-end justify-between">
           <div class="text-opacity-5 line-clamp-1 text text-md">
